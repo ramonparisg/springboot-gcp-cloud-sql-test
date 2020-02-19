@@ -2,7 +2,6 @@ spring:
   cloud:
     gcp:
       project-id: apt-achievment-268700
-      config
       sql:
         instance-connection-name: apt-achievment-268700:us-central1:test
         database-name: test
@@ -11,6 +10,7 @@ spring:
     username: test
     password: 123456
     initialization-mode: always
+    url: jdbc:postgresql://google/test?socketFactory=com.google.cloud.sql.postgres.SocketFactory&cloudSqlInstance=apt-achievment-268700:us-central1:test&ssl=false
 
 
   jpa:
