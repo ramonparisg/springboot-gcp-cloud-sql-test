@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    gcp:
+      project-id: apt-achievment-268700
+      config
+      sql:
+        instance-connection-name: apt-achievment-268700:us-central1:test
+        database-name: test
+        enabled: true
+  datasource:
+    username: test
+    password: 123456
+    initialization-mode: always
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
